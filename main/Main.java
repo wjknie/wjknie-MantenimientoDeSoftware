@@ -10,35 +10,30 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         ClienteView clienteView = new ClienteView();
         VeterinarioView veterinarioView = new VeterinarioView();
-    
 
         int opcion;
         do {
-            System.out.println("Desarrollado por:\nAndrea Carolina Quintero Narvaez \n1124851544");
-            System.out.println("\n == MENU PRINCIPAL ==");
-            System.out.println("1. Menu Clientes");
-            System.out.println("2. Menu Veterinarios");
+            System.out.println("\n== SISTEMA VETERINARIA ==");
+            System.out.println("Desarrollado por: Andrea Carolina Quintero Narváez");
+            System.out.println("1. Menú Clientes");
+            System.out.println("2. Menú Veterinarios");
             System.out.println("3. Salir");
-            System.out.println("Seleccione una opcion ");
+            System.out.print("Seleccione una opción: ");
             opcion = entrada.nextInt();
-
             entrada.nextLine();
 
             switch (opcion) {
                 case 1:
-                    clienteView.mostrarMenu(); 
+                    clienteView.mostrarMenu();
                     break;
-
                 case 2:
-                    veterinarioView.mostrarMenu();  
+                    veterinarioView.mostrarMenu();
                     break;
-
                 case 3:
-                    System.out.println("Bye");
+                    System.out.println("Gracias por usar el sistema.");
                     break;
-
                 default:
-                    System.out.println("Opcion invalida");
+                    System.out.println("Opción inválida");
             }
         } while (opcion != 3);
     }
